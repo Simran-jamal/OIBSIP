@@ -9,6 +9,7 @@
     <script src="script.js"></script>
 </head>
 
+
 <body>
     <p class="display"></p>
     <div class="box">
@@ -39,6 +40,7 @@
         <button onclick="
         updateCalculation('6');
         " class="gray-btn">6</button>
+
         <button onclick="
         updateCalculation('-');
         " class="orange-btn">-</button>
@@ -70,7 +72,6 @@
         <button onclick="
         eval(calculation);
         calculation=eval(calculation);
-        // console.log(calculation);
         displayCalculation();
         localStorage.setItem('calculation',calculation);
         " class="gray-btn">=</button>
@@ -79,6 +80,7 @@
         updateCalculation('/');
         " class="orange-btn">/</button>
     </div>
+
     <button onclick="
         calculation='';
         // console.log(calculation);
